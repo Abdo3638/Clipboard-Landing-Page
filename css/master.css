@@ -1,0 +1,303 @@
+/* Start global rules */
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-clr);
+  font-weight: 600;
+}
+
+p {
+  color: var(--paragrah-clr);
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+/* Start comp */
+
+.comp {
+  margin-bottom: 3rem;
+}
+
+.comp h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .comp h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* End comp */
+
+img {
+  max-width: 100%;
+}
+
+/* End global rules */
+/* Start Variables */
+
+:root {
+  --title-clr: #4c545d;
+  --paragrah-clr: #9fabb2;
+}
+
+/* End Variables */
+/* Start Landing */
+
+.landing .container {
+  margin-top: 8rem;
+  min-height: 100vh;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin: 2rem 0 1rem;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.download a {
+  display: block;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download a:first-child {
+  background-color: #26baa4;
+  box-shadow: 4px 4px 10px hsl(171deg 66% 44% / 40%);
+}
+
+.download a:last-child {
+  background-color: #6173ff;
+  box-shadow: 4px 4px 10px hsl(233deg 100% 69% / 40%);
+}
+
+@media (max-width: 767px) {
+  .landing h1 {
+    font-size: 2rem;
+  }
+  .landing p {
+    font-size: 1rem;
+  }
+  .download {
+    flex-direction: column;
+  }
+}
+
+/* End Landing */
+/* Start Features */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.features .image {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+  .image img {
+    padding-inline: 1rem;
+  }
+}
+
+.features .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-align: left;
+  }
+  .features .image {
+    position: relative;
+    left: -10vw;
+    top: 1rem;
+    width: 50rem;
+  }
+  .list h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* End Features */
+/* Start Access */
+
+.devices {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+/* End Access */
+/* Start Services */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.service img {
+  margin-bottom: 2rem;
+}
+
+.service h3 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .service h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* End Services */
+/* Start Logos */
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+}
+
+.logos img {
+  width: 8rem;
+}
+
+/* End Logos */
+/* Start Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(201, 11%, 66%, 0.2);
+  padding: 1.5rem 4rem;
+  margin-top: 8rem;
+}
+
+footer .image img {
+  width: 4rem;
+}
+
+footer .links {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem 3rem;
+}
+
+.links a {
+  color: hsl(201, 11%, 66%);
+  font-size: 1rem;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  footer .links {
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  footer .image img {
+    padding: 0;
+  }
+}
+
+/* End Footer */
